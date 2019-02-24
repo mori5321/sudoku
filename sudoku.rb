@@ -69,7 +69,7 @@ module Sudoku
 
     class Board
       def initialize
-        @blocks = block_points.map {|point| Block.new(point) }
+        @blocks = block_points.map {|point| Sudoku::Field::Block.new(point) }
       end
 
       def cells #tested #TODO: delegation
