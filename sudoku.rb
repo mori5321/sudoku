@@ -1,7 +1,7 @@
 require "pry"
 
 # USAGE
-# gen = Sudoku::Generator.new
+# gen = Sudoku::Field::Generator.new
 # gen.reset_number_on_board
 # puts gen.display
 
