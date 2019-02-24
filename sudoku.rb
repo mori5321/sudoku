@@ -2,7 +2,7 @@ require "pry"
 
 # USAGE
 # gen = Sudoku::Field::Generator.new
-# gen.reset_number_on_board
+# gen.generate!
 # puts gen.display
 
 # 5|2|8|7|4|9|6|1|3
@@ -24,7 +24,7 @@ module Sudoku
 
       attr_reader :board
 
-      def generate
+      def generate!
         reset_number_on_board
       end
 
